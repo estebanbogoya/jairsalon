@@ -72,7 +72,7 @@ a{
     border: 6px solid #171717;
 }
 
-.item1 {
+.item1{
 
     background-image: url("../img/imagen1.jpg");
     background-position: center;
@@ -115,37 +115,18 @@ a{
 }
 
 
-.item6:hover{
-    animation: myAnim 2s ease 0s 1 normal forwards;
+.item:hover{
+    animation: myAnim 2s ease 0s;
 }
 
 @keyframes myAnim {
 
     0%,
     100% {
-        transform: translateX(0%);
-        transform-origin: 50% 50%;
+        transform: scale(1.1)
     }
 
-    15% {
-        transform: translateX(-30px) rotate(-6deg);
-    }
-
-    30% {
-        transform: translateX(15px) rotate(6deg);
-    }
-
-    45% {
-        transform: translateX(-15px) rotate(-3.6deg);
-    }
-
-    60% {
-        transform: translateX(9px) rotate(2.4deg);
-    }
-
-    75% {
-        transform: translateX(-6px) rotate(-1.2deg);
-    }
+   
 } 
 
 .footer{
