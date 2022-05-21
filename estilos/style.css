@@ -181,3 +181,13 @@ h2{
         justify-content: space-around;
     }
 }
+/* seccion CSS productos */
+
+.productos{
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: 'Koulen', cursive;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
