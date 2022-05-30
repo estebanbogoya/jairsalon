@@ -197,7 +197,7 @@ h2 {
   .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: (300px)[6];
+    -ms-grid-rows: (300px)6;
         grid-template-rows: repeat(6, 300px);
   }
   .footer {
