@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #efe1e1;
+}
+
+.headerIndex {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8% auto;
+      grid-template-columns: 8% auto;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "logo nav";
+  grid-area: header;
+}
+
+.headerIndex .nav {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: nav;
+  background-color: beige;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.headerIndex .nav ul, .headerIndex .nav li {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.headerIndex .nav ul a, .headerIndex .nav li a {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.principal {
+  text-align: center;
+  background-image: url(../img/jairsalon.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.p1 {
+  background-color: rgba(214, 207, 207, 0.5);
+  margin-left: 50px;
+  margin-right: 50px;
+  font-family: 'Lobster';
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.titulo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: xx-large;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin-top: 60px;
+  background-color: darkgrey;
+  margin-top: 0%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20vw 20vw 20vw;
+      grid-template-columns: 20vw 20vw 20vw;
+  -ms-grid-rows: 300px 300px;
+      grid-template-rows: 300px 300px;
+  grid-gap: 1rem;
+  background-color: #d0d0d0;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.item {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 4px;
+  border: 6px solid #171717;
+}
+
+.item1 {
+  background-image: url("../img/imagen1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.item2 {
+  background-image: url("../img/imagen2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.item3 {
+  background-image: url("../img/imagen3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.item4 {
+  background-image: url("../img/imagen4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.item5 {
+  background-image: url("../img/imagen5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.item6 {
+  background-image: url("../img/imagen6.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.item:hover {
+  -webkit-animation: myAnim 2s ease 0s;
+          animation: myAnim 2s ease 0s;
+}
+
+@-webkit-keyframes myAnim {
+  0%,
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@keyframes myAnim {
+  0%,
+  100% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+h2 {
+  font-size: large;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: beige;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: gray;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (300px)[6];
+        grid-template-rows: repeat(6, 300px);
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+/* seccion CSS productos */
+.productos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: xx-large;
+  font-family: 'Koulen', cursive;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=style.css.map */
