@@ -36,14 +36,23 @@
         </header>
     </div>
 
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label">Ingresa tu correo</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label">Dejanos tu mensaje</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
+    <h1 class="titulo">Formulario de Contacto</h1>
+
+<div class="formulario">
+  <form action="/action_page.php">
+    <label for="fname">Ingresa tu nombre</label>
+    <input type="text" id="fname" name="firstname" placeholder="Nombre..">
+
+    <label for="lname">Ingresa tu apellido</label>
+    <input type="text" id="lname" name="lastname" placeholder="Apellido..">
+
+    <label for="subject">Dejanos tu mensaje</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
 
       <footer class= footer>
         <h2>Agenda tu cita</h2>
