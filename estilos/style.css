@@ -61,6 +61,12 @@
           box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+.tit {
+  text-decoration: none;
+  font-size: large;
+  color: black;
+}
+
 .principal {
   margin-top: 10px;
   text-align: center;
@@ -209,23 +215,6 @@ h2 {
   font-size: large;
 }
 
-@media only screen and (max-width: 550px) {
-  .container {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    -ms-grid-rows: (300px)[6];
-        grid-template-rows: repeat(6, 300px);
-  }
-  .footer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
 /* seccion CSS productos */
 .productos {
   display: -webkit-box;
@@ -370,7 +359,6 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-/*Seccion Servicios*/
 /*mapa*/
 .btn--twitter {
   background-color: lightblue;
@@ -406,5 +394,40 @@ input[type=submit]:hover {
   height: 500px;
   width: 500px;
   background-color: beige;
+}
+
+@media only screen and (max-width: 550px) {
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: (300px)[6];
+        grid-template-rows: repeat(6, 300px);
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .containerProductos {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    -ms-grid-rows: 350px 350px 350px 350px;
+        grid-template-rows: 350px 350px 350px 350px;
+  }
+  .redes1 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .textos {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
